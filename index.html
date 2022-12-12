@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <form>
+      <label for="contact">Contact</label>
+      <input
+        type="text"
+        placeholder="Please enter contact number"
+        name="contact"
+        id="contact"
+      />
+      <p id="contact-error"></p>
+
+      <label for="name">Name</label>
+      <input
+        type="text"
+        placeholder="Please enter name"
+        name="name"
+        id="name"
+      />
+      <p id="name-error"></p>
+
+      <label for="email">Email</label>
+      <input
+        type="text"
+        placeholder="Please enter email number"
+        name="email"
+        id="email"
+      />
+      <p id="email-error"></p>
+
+      <label for="age">Age</label>
+      <input type="text" placeholder="Please enter email" name="age" id="age" />
+      <p id="age-error"></p>
+
+      <button type="button" onclick="validate()">Submit</button>
+    </form>
+
+    <!-- this is referring to button -->
+    <button onclick="this.style.display = 'none'">Click</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- task
+create a form and validate it: email, contact, name, age, designation, select multiple files, DOB and submit form -->
